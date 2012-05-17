@@ -54,7 +54,9 @@ yb.preconf.debuglevel = verbose
 yb.preconf.errorlevel = verbose
 if %s:
     yb.preconf.fn = %S
-yb.setCacheDir ()
+yb.doGenericSetup(1)
+#djs
+#yb.setCacheDir ()
 
 if verbose:
     print \"febootstrap_yum_rpm: looking up the base packages from the command line\"
